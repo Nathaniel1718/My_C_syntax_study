@@ -1,0 +1,37 @@
+
+
+#include <stdio.h>
+
+#include <stdlib.h>
+
+int main()
+
+{
+
+    float a,b,c,answer,coeff;
+
+    char equation[9],x1,x2,equalto;
+
+    
+
+    printf("kindly enter a linear equation of the form\n ax +or- bx=c: ");
+
+    scanf("%s", equation);
+
+    if (sscanf(equation, "%f%c%f%c%c%f", &a, &x1, &b, &x2, &equalto, &c)>=5&&x1==x2) {
+
+    coeff=a+b;
+
+    answer=c/coeff;
+
+    printf("\nthe solution to the value of x in the given equation is: %.4f\n", answer);}
+
+    else{
+
+        printf("\n\nyou have not entered the required form of equation.\n kindly enter the linear equation of the form 'ax +or- bx =c' ");}
+
+    printf("\n\nThank you for trying out this code, it shall constantly be improved to solve other forms of linear equation\n\n Am open to internships and scholarship please i want to learn more");
+
+    return 0;
+
+}
